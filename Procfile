@@ -1,0 +1,1 @@
+web: ./build/install/ru.anipanda.anipanda-backend/bin/ru.anipanda.anipanda-backend

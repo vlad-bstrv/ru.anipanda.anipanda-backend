@@ -38,5 +38,10 @@ dependencies {
 
     //postgresql
     implementation("org.postgresql:postgresql:42.3.6")
+    implementation("com.zaxxer:HikariCP:5.0.1")
 
+}
+
+tasks.create("stage") {
+    dependsOn("installDist")
 }

@@ -10,7 +10,7 @@ import ru.anipanda.plugins.*
 fun main() {
     Database.connect("jdbc:postgresql://localhost:5432/anipanda", driver = "org.postgresql.Driver",
         user = "postgres", password = "SafikcPL6sxfDn")
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
         configureRouting()
         configureLoginRouting()
         configureRegisterRouting()
